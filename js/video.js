@@ -48,7 +48,7 @@ document.querySelector("#faster").addEventListener("click", function() {
 	console.log(video,playbackRate)
 });
 
-document.querySelector("#slider").addEventListener("click", function() { 
+document.querySelector("#slider").addEventListener("change", function() { 
 	console.log(this.value)
 	var slider = this.value; 
 	video.volume = slider / 100;
