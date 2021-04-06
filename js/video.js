@@ -52,5 +52,13 @@ document.querySelector("#slider").addEventListener("click", function() {
 	console.log(this.value)
 	var slider = this.value; 
 	video.volume = slider / 100;
-
 });
+
+document.querySelector("#skip").addEventListener("click", function() { 
+	video.currentTime += 15; 
+	if (video.currentTime > 65) {
+		video.currentTime = 0;
+	}
+});
+
+
